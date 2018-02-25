@@ -56,10 +56,10 @@
 								<p class="white">This is a scheduled event</p>
 							<div class="row date-picker" id="date-picker">
 								<div class="six columns">
-									{{ Form::text('start_date', '', array( 'placeholder' => 'Start Date',  'class' => 'form-field', 'name' => 'start_time', 'id' => 'startPicker')) }}
+									{!! Form::text('start_date', '', array( 'placeholder' => 'Start Date',  'class' => 'form-field', 'name' => 'start_time', 'id' => 'startPicker')) !!}
 								</div>
 								<div class="six columns">
-									{{ Form::text('end_date', '', array( 'placeholder' => 'End Date',  'class' => 'form-field', 'name' => 'end_time', 'id' => 'endPicker')) }}
+									{!! Form::text('end_date', '', array( 'placeholder' => 'End Date',  'class' => 'form-field', 'name' => 'end_time', 'id' => 'endPicker')) !!}
 								</div>
 							</div>
 						</div>

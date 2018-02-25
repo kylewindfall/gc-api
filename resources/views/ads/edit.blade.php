@@ -6,7 +6,7 @@
 
 			<div class="six columns">
 
-				<h2><i class="icon-plus icons"></i> Edit Ad for {{ $ad->business }}</h2>
+				<h2><i class="icon-plus icons"></i> Edit Ad for {!! $ad->business !!}</h2>
 
 			</div>
 
@@ -14,9 +14,9 @@
 				@if($ad->approved)
 
 					@if($ad->active == '1')
-						<div class="medium btn pill-left default""><a href="/ads/{{ $ad->id }}/deactivate">Deactivate</a></div>
+						<div class="medium btn pill-left default""><a href="/ads/{!! $ad->id !!}/deactivate">Deactivate</a></div>
 					@else
-						<div class="medium btn pill-left default""><a href="/ads/{{ $ad->id }}/activate">Activate</a></div>
+						<div class="medium btn pill-left default""><a href="/ads/{!! $ad->id !!}/activate">Activate</a></div>
 					@endif
 
 				@endif
@@ -24,9 +24,9 @@
 				<div class="medium squared btn default"><a href="/ads">All Premium Ads</a></div>
 
 				@if($ad->archive == '1')
-					<div class="medium btn pill-right default"><a href="/ads/{{ $ad->id }}/restore">Restore</a></div>
+					<div class="medium btn pill-right default"><a href="/ads/{!! $ad->id !!}/restore">Restore</a></div>
 				@else
-					<div class="medium btn pill-right default"><a href="/ads/{{ $ad->id }}/archive">Archive</a></div>
+					<div class="medium btn pill-right default"><a href="/ads/{!! $ad->id !!}/archive">Archive</a></div>
 				@endif
 			</div>
 
@@ -36,14 +36,14 @@
 		<div class="row">
 			<div class="twelve columns wide-form">
 
-				<form method="PUT" action="/ads/{{ $ad->id }}/update">
-					<input type="text" name="business" placeholder="Business Name" value="{{ $ad->business }}">
-					<input type="text" name="headline" placeholder="Headline" value="{{ $ad->headline }}">
-					<textarea name="copy" placeholder="Your Copy">{{ $ad->copy }}</textarea>
-					<input type="text" name="cta" placeholder="Call to action" value="{{ $ad->cta }}">
-					<input type="text" name="link" placeholder="Link" value="{{ $ad->link }}">
-					<input type="text" name="image" placeholder="Image Path" value="{{ $ad->image }}">
-					<input type="text" name="logo" placeholder="Logo Path" value="{{ $ad->logo }}">
+				<form method="PUT" action="/ads/{!! $ad->id !!}/update">
+					<input type="text" name="business" placeholder="Business Name" value="{!! $ad->business !!}">
+					<input type="text" name="headline" placeholder="Headline" value="{!! $ad->headline !!}">
+					<textarea name="copy" placeholder="Your Copy">{!! $ad->copy !!}</textarea>
+					<input type="text" name="cta" placeholder="Call to action" value="{!! $ad->cta !!}">
+					<input type="text" name="link" placeholder="Link" value="{!! $ad->link !!}">
+					<input type="text" name="image" placeholder="Image Path" value="{!! $ad->image !!}">
+					<input type="text" name="logo" placeholder="Logo Path" value="{!! $ad->logo !!}">
 
 
 					<div class="row">

@@ -4,7 +4,7 @@
 
 	<script>
 		$(function() {
-			sweetAlert("Great job!", "{{ Session::get('success') }}", "success");
+			sweetAlert("Great job!", "{!! Session::get('success') !!}", "success");
 		});
 
 	</script>
@@ -15,7 +15,7 @@
 
 	<script>
 		$(function() {
-			sweetAlert("Uh Oh!", "{{ Session::get('error') }}", "error");
+			sweetAlert("Uh Oh!", "{!! Session::get('error') !!}", "error");
 		});
 
 	</script>

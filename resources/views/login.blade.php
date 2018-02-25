@@ -11,15 +11,15 @@
 				<img src="/assets/img/logo-lg.png"/>
 			</div>
 
-				{{ Form::open(array('route' => 'sessions.store')) }} 
+				{!! Form::open(array('route' => 'sessions.store')) !!} 
 
-						{{ Form::text('username', Input::old('username'), array('class' => 'lined', 'placeholder' => 'Username')) }}
+						{!! Form::text('username', Input::old('username'), array('class' => 'lined', 'placeholder' => 'Username')) !!}
 
-						{{ Form::password('password', array('class' => 'lined', 'placeholder' => 'Password')) }}
+						{!! Form::password('password', array('class' => 'lined', 'placeholder' => 'Password')) !!}
 
-					{{ Form::submit('Login', ['class' => 'big-submit']) }}
+					{!! Form::submit('Login', ['class' => 'big-submit']) !!}
 				
-				{{ Form::close() }} 
+				{!! Form::close() !!} 
 
 			</div>
 
