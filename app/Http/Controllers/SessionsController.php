@@ -1,6 +1,6 @@
 <?php
 
-class SessionsController extends \BaseController
+class SessionsController extends Controller
 {
 
     public function create()
