@@ -1,6 +1,7 @@
 <?php
+use Illuminate\Database\Eloquent\Model;
 
-class Ad extends Eloquent
+class Ad extends Model
 {
 
 }
