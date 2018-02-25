@@ -1,5 +1,11 @@
 <?php
 
+namespace App\Http\Controllers;
+
+use App\Ad;
+use Illuminate\Support\Facades\Input;
+
+
 class AdController extends Controller
 {
 
