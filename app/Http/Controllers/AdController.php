@@ -7,18 +7,18 @@ class AdController extends Controller
     {
         $active     = Ad::where('archive', '0')->where('active', '1')->orderBy('business', 'ASC')->get();
         $inactive = Ad::where('archive', '0')->where('active', '0')->orderBy('business', 'ASC')->get();
-        return View::make('ads.index', compact('active', 'inactive'));
+        return view('ads.index', compact('active', 'inactive'));
     }
 
     public function archived()
     {
         $ads    = Ad::where('archive', '1')->orderBy('business', 'ASC')->get();
-        return View::make('ads.archive', compact('ads'));
+        return view('ads.archive', compact('ads'));
     }
 
     public function create()
     {
-        return View::make('ads.create');
+        return view('ads.create');
     }
 
     public function store()
@@ -51,7 +51,7 @@ class AdController extends Controller
         $ad->save();
 
 
-        return Redirect::to('/ads')->with('message', 'Success');
+        return redirect('/ads')->with('message', 'Success');
     }
 
     public function show($id)
@@ -59,7 +59,7 @@ class AdController extends Controller
         $ad = Ad::find($id);
         $start = date("D M d Y", $ad->start_time);
         $end = date("D M d Y", $ad->end_time);
-        return View::make('ads.show', compact('ad', 'start', 'end'));
+        return view('ads.show', compact('ad', 'start', 'end'));
     }
 
     public function edit($id)
@@ -67,7 +67,7 @@ class AdController extends Controller
         $ad = Ad::find($id);
         $start = date("D M d Y", $ad->start_time);
         $end = date("D M d Y", $ad->end_time);
-        return View::make('ads.edit', compact('ad', 'start', 'end'));
+        return view('ads.edit', compact('ad', 'start', 'end'));
     }
 
     public function update($id)
@@ -99,7 +99,7 @@ class AdController extends Controller
 
         $ad->save();
 
-        return Redirect::to('/ads')->with('message', 'Success');
+        return redirect('/ads')->with('message', 'Success');
     }
 
     public function approve($id)
@@ -108,7 +108,7 @@ class AdController extends Controller
         $ad->approved = 1;
         $ad->save();
 
-        return Redirect::to('ads/')->with('message', 'Success');
+        return redirect('ads/')->with('message', 'Success');
     }
     public function approval($id)
     {
@@ -116,7 +116,7 @@ class AdController extends Controller
         $ad->approved = 1;
         $ad->save();
 
-        return Redirect::to('ads/$id')->with('message', 'Success');
+        return redirect('ads/$id')->with('message', 'Success');
     }
 
     public function unapprove($id)
@@ -125,7 +125,7 @@ class AdController extends Controller
         $ad->approved = 0;
         $ad->save();
 
-        return Redirect::to('ads/')->with('message', 'Success');
+        return redirect('ads/')->with('message', 'Success');
     }
 
     public function activate($id)
@@ -134,7 +134,7 @@ class AdController extends Controller
         $ad->active = 1;
         $ad->save();
 
-        return Redirect::to('ads/')->with('message', 'Success');
+        return redirect('ads/')->with('message', 'Success');
     }
 
     public function deactivate($id)
@@ -143,7 +143,7 @@ class AdController extends Controller
         $ad->active = 0;
         $ad->save();
 
-        return Redirect::to('ads/')->with('message', 'Success');
+        return redirect('ads/')->with('message', 'Success');
     }
 
     public function archive($id)
@@ -152,7 +152,7 @@ class AdController extends Controller
         $ad->archive = 1;
         $ad->save();
 
-        return Redirect::to('ads/')->with('message', 'Success');
+        return redirect('ads/')->with('message', 'Success');
     }
 
     public function restore($id)
@@ -161,7 +161,7 @@ class AdController extends Controller
         $ad->archive = 0;
         $ad->save();
 
-        return Redirect::to('ads/')->with('message', 'Success');
+        return redirect('ads/')->with('message', 'Success');
     }
 
     public function homeshow($id)
@@ -170,7 +170,7 @@ class AdController extends Controller
         $ad->homepage = 1;
         $ad->save();
 
-        return Redirect::to('ads/')->with('message', 'Success');
+        return redirect('ads/')->with('message', 'Success');
     }
 
     public function homehide($id)
@@ -179,7 +179,7 @@ class AdController extends Controller
         $ad->homepage = 0;
         $ad->save();
 
-        return Redirect::to('ads/')->with('message', 'Success');
+        return redirect('ads/')->with('message', 'Success');
     }
 
     public function insidehow($id)
@@ -188,7 +188,7 @@ class AdController extends Controller
         $ad->inside = 1;
         $ad->save();
 
-        return Redirect::to('ads/')->with('message', 'Success');
+        return redirect('ads/')->with('message', 'Success');
     }
 
     public function insidehide($id)
@@ -197,7 +197,7 @@ class AdController extends Controller
         $ad->inside = 0;
         $ad->save();
 
-        return Redirect::to('ads/')->with('message', 'Success');
+        return redirect('ads/')->with('message', 'Success');
     }
 
     public function scheduler()
@@ -228,6 +228,6 @@ class AdController extends Controller
     public function delete($id)
     {
 
-        return View::make('ads.index');
+        return view('ads.index');
     }
 }

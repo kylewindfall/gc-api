@@ -13,9 +13,9 @@
 
 Route::get('/', function () {
     if (Auth::check()) {
-        return View::make('dashboard');
+        return view('dashboard');
     }
-    return View::make('login');
+    return view('login');
 });
 
 Route::get('/test', function () {
@@ -60,7 +60,7 @@ Route::get('/click/{id}', function ($id) {
     $ad->save();
 
     //Redirects user to link
-    return Redirect::to($ad->link);
+    return redirect($ad->link);
 });
 
 
@@ -72,7 +72,7 @@ Route::get('/password/{id}', function ($id) {
     $user->save();
 
     //Redirects user to link
-    return Redirect::to('/')->with('message', 'Success');
+    return redirect('/')->with('message', 'Success');
 });
 
 // Authentication Routes

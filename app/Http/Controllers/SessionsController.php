@@ -6,19 +6,19 @@ class SessionsController extends Controller
     public function create()
     {
         if (Auth::check()) {
-            return Redirect::to('/');
+            return redirect('/');
         }
-        return View::make('login');
+        return view('login');
     }
 
     public function store()
     {
         if (Auth::attempt(Input::only('username', 'password'))) {
             $user = Auth::user()->first_name;
-            return Redirect::to('/')->with('success', 'You are logged in as ' . $user);
+            return redirect('/')->with('success', 'You are logged in as ' . $user);
         }
 
-        return Redirect::to('login')->with('error', 'Your username or password is incorrect.');
+        return redirect('login')->with('error', 'Your username or password is incorrect.');
         ;
     }
 
@@ -26,6 +26,6 @@ class SessionsController extends Controller
     {
         Session::flush();
         Auth::logout();
-        return Redirect::to('login');
+        return redirect('login');
     }
 }
