@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
 	|--------------------------------------------------------------------------
@@ -44,9 +44,9 @@ return array(
 	|
 	*/
 
-    'connections' => array(
+    'connections' => [
 
-        'mysql' => array(
+        'mysql' => [
             'driver'    => 'mysql',
             'host'      => 'localhost',
             'database'  => 'glacier_api',
@@ -55,9 +55,9 @@ return array(
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
-        ),
+        ],
 
-    ),
+    ],
 
     /*
 	|--------------------------------------------------------------------------
@@ -83,16 +83,16 @@ return array(
 	|
 	*/
 
-    'redis' => array(
+    'redis' => [
 
         'cluster' => false,
 
-        'default' => array(
+        'default' => [
             'host'     => '127.0.0.1',
             'port'     => 6379,
             'database' => 0,
-        ),
+        ],
 
-    ),
+    ],
 
-);
+];
