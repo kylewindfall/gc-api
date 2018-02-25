@@ -33,7 +33,7 @@ Route::get('/test', function () {
 });
 
 // Checks the user is logged in
-Route::group(['before' => 'auth'], function () {
+Route::group(['middleware' => 'auth'], function () {
     Route::resource('ads', 'AdController');
     Route::get('/archived', 'AdController@archived');
     Route::get('ads/{id}/approve', 'AdController@approve');
