@@ -1,5 +1,6 @@
 <?php
 
-class Ad extends Eloquent {
+class Ad extends Eloquent
+{
 
 }

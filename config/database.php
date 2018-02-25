@@ -2,7 +2,7 @@
 
 return array(
 
-	/*
+    /*
 	|--------------------------------------------------------------------------
 	| PDO Fetch Style
 	|--------------------------------------------------------------------------
@@ -13,9 +13,9 @@ return array(
 	|
 	*/
 
-	'fetch' => PDO::FETCH_CLASS,
+    'fetch' => PDO::FETCH_CLASS,
 
-	/*
+    /*
 	|--------------------------------------------------------------------------
 	| Default Database Connection Name
 	|--------------------------------------------------------------------------
@@ -26,9 +26,9 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+    'default' => 'mysql',
 
-	/*
+    /*
 	|--------------------------------------------------------------------------
 	| Database Connections
 	|--------------------------------------------------------------------------
@@ -44,22 +44,22 @@ return array(
 	|
 	*/
 
-	'connections' => array(
+    'connections' => array(
 
-		'mysql' => array(
-			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'glacier_api',
-			'username'  => 'glacier_connect',
-			'password'  => 'MG42tilk2RYL',
-			'charset'   => 'utf8',
-			'collation' => 'utf8_unicode_ci',
-			'prefix'    => '',
-		),
+        'mysql' => array(
+            'driver'    => 'mysql',
+            'host'      => 'localhost',
+            'database'  => 'glacier_api',
+            'username'  => 'glacier_connect',
+            'password'  => 'MG42tilk2RYL',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+        ),
 
-	),
+    ),
 
-	/*
+    /*
 	|--------------------------------------------------------------------------
 	| Migration Repository Table
 	|--------------------------------------------------------------------------
@@ -70,9 +70,9 @@ return array(
 	|
 	*/
 
-	'migrations' => 'migrations',
+    'migrations' => 'migrations',
 
-	/*
+    /*
 	|--------------------------------------------------------------------------
 	| Redis Databases
 	|--------------------------------------------------------------------------
@@ -83,16 +83,16 @@ return array(
 	|
 	*/
 
-	'redis' => array(
+    'redis' => array(
 
-		'cluster' => false,
+        'cluster' => false,
 
-		'default' => array(
-			'host'     => '127.0.0.1',
-			'port'     => 6379,
-			'database' => 0,
-		),
+        'default' => array(
+            'host'     => '127.0.0.1',
+            'port'     => 6379,
+            'database' => 0,
+        ),
 
-	),
+    ),
 
 );
