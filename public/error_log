@@ -1,0 +1,13 @@
+[21-Dec-2016 22:54:30 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/glacier/public_html/gc-api/app/controllers/AdController.php on line 34
+[21-Dec-2016 23:50:23 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/glacier/public_html/gc-api/app/storage/views/f0c5e2201c703ce0985052d65b413844 on line 62
+[21-Dec-2016 23:51:41 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/glacier/public_html/gc-api/app/storage/views/f0c5e2201c703ce0985052d65b413844 on line 62
+[21-Dec-2016 23:56:52 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/glacier/public_html/gc-api/app/storage/views/f0c5e2201c703ce0985052d65b413844 on line 58
+[21-Dec-2016 23:57:10 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/glacier/public_html/gc-api/app/storage/views/f0c5e2201c703ce0985052d65b413844 on line 58
+[22-Dec-2016 16:58:30 UTC] PHP Parse error:  syntax error, unexpected 'Dec' (T_STRING) in /home/glacier/public_html/gc-api/app/controllers/AdController.php on line 91
+[04-Dec-2017 20:49:26 UTC] PHP Parse error:  syntax error, unexpected '(' in /home/glacier/public_html/gc-api/app/controllers/AdController.php on line 198
+[04-Dec-2017 21:12:15 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home/glacier/public_html/gc-api/app/storage/views/f0c5e2201c703ce0985052d65b413844 on line 14
+[04-Dec-2017 21:13:33 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home/glacier/public_html/gc-api/app/storage/views/27ed087f62c2f74c0999d99fc610b807 on line 16
+[04-Dec-2017 21:14:38 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home/glacier/public_html/gc-api/app/storage/views/f0c5e2201c703ce0985052d65b413844 on line 14
+[04-Dec-2017 21:15:54 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home/glacier/public_html/gc-api/app/storage/views/27ed087f62c2f74c0999d99fc610b807 on line 16
+[04-Dec-2017 21:17:00 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home/glacier/public_html/gc-api/app/storage/views/f0c5e2201c703ce0985052d65b413844 on line 14
+[04-Dec-2017 21:19:46 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home/glacier/public_html/gc-api/app/storage/views/f0c5e2201c703ce0985052d65b413844 on line 26
